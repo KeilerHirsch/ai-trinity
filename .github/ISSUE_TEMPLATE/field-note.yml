@@ -1,0 +1,28 @@
+name: Field Note
+description: Share a platform-specific gap you hit building the three pillars (e.g. macOS/Linux equivalents of Windows Reality).
+title: "[field-note] "
+labels: ["field-note"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Concrete beats general — what broke, on what platform/setup, and what actually fixed it. English or German is fine.
+  - type: input
+    id: platform
+    attributes:
+      label: Platform / setup
+      description: e.g. macOS 15, Claude Code + a specific harness/memory store
+    validations:
+      required: true
+  - type: textarea
+    id: symptom
+    attributes:
+      label: What broke (the symptom)
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: What actually fixed it
+    validations:
+      required: true

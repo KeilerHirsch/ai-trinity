@@ -1,0 +1,29 @@
+name: "In the Wild" submission
+description: Built something because you followed this thesis? Submit it for docs/06-in-the-wild.md.
+title: "[in-the-wild] "
+labels: ["showcase"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        See docs/06-in-the-wild.md for the tone and format this aims for — concrete, honest about scope, not a pitch.
+  - type: input
+    id: name-link
+    attributes:
+      label: Name + link
+      description: Project name and repo/URL
+    validations:
+      required: true
+  - type: textarea
+    id: gap
+    attributes:
+      label: What gap does it close?
+      description: Which pillar, and specifically what it does that the pillar alone doesn't.
+    validations:
+      required: true
+  - type: textarea
+    id: how
+    attributes:
+      label: How, briefly
+    validations:
+      required: true

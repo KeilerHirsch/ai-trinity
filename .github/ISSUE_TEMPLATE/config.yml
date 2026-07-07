@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Contributing guide
+    url: https://github.com/KeilerHirsch/ai-trinity/blob/main/CONTRIBUTING.md
+    about: Read this first for what kinds of contributions fit.
