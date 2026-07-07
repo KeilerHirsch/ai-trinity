@@ -1,6 +1,6 @@
 [English](../01-problem.md) · 🌐 **Deutsch**
 
-[← Zurück zum README](README.md) · **Problem** · [These](02-thesis.md) · [Bau-Guide](03-build-guide.md) · [Windows-Realität](04-windows-reality.md) · [FAQ](05-faq.md)
+[← Zurück zum README](README.md) · **Problem** · [These](02-thesis.md) · [Bau-Guide](03-build-guide.md) · [Windows-Realität](04-windows-reality.md) · [FAQ](05-faq.md) · [In der Praxis](06-in-the-wild.md)
 
 ---
 

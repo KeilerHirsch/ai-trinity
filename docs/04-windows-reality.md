@@ -1,6 +1,6 @@
 🌐 **English** · [Deutsch](de/04-windows-reality.md)
 
-[← Back to README](../README.md) · [Problem](01-problem.md) · [Thesis](02-thesis.md) · [Build Guide](03-build-guide.md) · **Windows Reality** · [FAQ](05-faq.md)
+[← Back to README](../README.md) · [Problem](01-problem.md) · [Thesis](02-thesis.md) · [Build Guide](03-build-guide.md) · **Windows Reality** · [FAQ](05-faq.md) · [In the Wild](06-in-the-wild.md)
 
 ---
 

@@ -1,0 +1,23 @@
+name: Correction
+description: Report a wrong claim, broken link, typo, or outdated detail.
+title: "[correction] "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for catching something. English or German is fine.
+  - type: input
+    id: location
+    attributes:
+      label: Where
+      description: File and section, e.g. docs/04-windows-reality.md, "OAuth logins"
+    validations:
+      required: true
+  - type: textarea
+    id: whats-wrong
+    attributes:
+      label: What's wrong
+      description: What's incorrect, broken, or outdated — and what it should say instead if you know.
+    validations:
+      required: true

@@ -5,9 +5,13 @@
 
   **A great model is not enough. Here is what makes Claude actually reliable — and how to build it yourself.**
 
+  [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
+  [![Link Check](https://github.com/KeilerHirsch/ai-trinity/actions/workflows/link-check.yml/badge.svg)](https://github.com/KeilerHirsch/ai-trinity/actions/workflows/link-check.yml)
+  [![EN/DE](https://img.shields.io/badge/docs-EN%20%7C%20DE-blue.svg)](docs/de/README.md)
+
   🌐 **English** · [Deutsch](docs/de/README.md)
 
-  [Problem](docs/01-problem.md) · [Thesis](docs/02-thesis.md) · [Build Guide](docs/03-build-guide.md) · [Windows Reality](docs/04-windows-reality.md) · [FAQ](docs/05-faq.md)
+  [Problem](docs/01-problem.md) · [Thesis](docs/02-thesis.md) · [Build Guide](docs/03-build-guide.md) · [Windows Reality](docs/04-windows-reality.md) · [FAQ](docs/05-faq.md) · [In the Wild](docs/06-in-the-wild.md)
 </div>
 
 ---
@@ -34,6 +38,7 @@ There is a lot of confident noise about "getting the most out of Claude." Most o
 2. **[The Thesis](docs/02-thesis.md)** — the three pillars and why all three are mandatory.
 3. **[The Build Guide](docs/03-build-guide.md)** — step by step, pointing at the three canonical projects.
 4. **[Windows Reality](docs/04-windows-reality.md)** — the honest gaps nobody else documents.
+5. **[In the Wild](docs/06-in-the-wild.md)** — concrete tools built directly on this thesis, starting with the author's own.
 
 ## Credits
 
