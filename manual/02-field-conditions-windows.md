@@ -1,6 +1,4 @@
-🌐 **English** · [Deutsch](de/04-windows-reality.md)
-
-[← Back to README](../README.md) · [Problem](01-problem.md) · [Thesis](02-thesis.md) · [Build Guide](03-build-guide.md) · **Windows Reality** · [FAQ](05-faq.md) · [In the Wild](06-in-the-wild.md)
+[← Manual](../README.md) · [Problem](00-problem.md) · [Thesis](01-thesis.md) · [Pillars](pillar-1-model/README.md) · [Windows](02-field-conditions-windows.md) · [FAQ](03-faq.md) · [Field Notes](../field-notes/README.md) · [Upstream](../upstream/README.md)
 
 ---
 
@@ -43,6 +41,18 @@ Running `.exe` tools through Git-Bash, two independent traps: MSYS rewrites `/fl
 At session start, every MCP server + hook + (on Windows) logon-triggered scheduled task fires in the same second. Slow-to-import servers blow the default 30s startup window and get marked "failed" — even though they're healthy. Tell-tale: *several unrelated servers fail together*.
 
 **Workaround:** raise the startup timeout in your runtime's env config, and remove the boot amplifier (don't trigger heavy work at logon/session-start). Prove a server is actually healthy with a direct handshake probe before declaring it broken.
+
+## 7. Hook timeouts are seconds — and 60000 means 16.7 hours
+
+Claude Code hook `timeout` values are **seconds**, not milliseconds. A config carrying `"timeout": 60000` (obviously meant as 60s-in-ms) arms a mine that only detonates the day a hook actually hangs: the runtime will dutifully wait 16.7 hours. Meanwhile `MCP_TIMEOUT` values above 60s are silently ignored (hard cap) — so the two knobs fail in opposite directions.
+
+**Workaround:** audit every timeout in your hook config once, with the unit written next to it. Unit bugs travel in packs — when you find one, grep the whole file: in this setup the fourth one sat two lines below the third.
+
+## 8. A tool reinstall can silently switch Python — and break C extensions
+
+`uv tool install --force` rebuilds the tool venv with whatever Python it prefers *today*. Here that flipped 3.13 → 3.12, and a numpy compiled for 3.13 leaked in from the Windows-Store Python's user site-packages — `pip list` says everything is fine while `import numpy` dies on a C-extension mismatch.
+
+**Workaround:** pin the interpreter explicitly (`--python 3.13`) on every reinstall, and treat "metadata says installed, import crashes" as an environment-shadowing problem, not a package bug. Any per-venv customization (like a `sitecustomize.py`) must be re-applied after every rebuild — keep a copy outside the venv.
 
 ---
 

@@ -25,4 +25,4 @@ My recommendation is the `LedgerWriter`, so the guarantee holds no matter who ca
 - The **refunds/idempotency bug survived the night.** The assistant didn't just remember it; it connected it to today's task (`RetryPolicy` is the retry trigger) and raised it at the right moment — the kind of cross-context reasoning that only works with continuity.
 - Day 2 starts at full strength instead of at a deficit. Tomorrow will too.
 
-This is the payoff from [the thesis](../docs/02-thesis.md): it feels like **there was never a pause**. Same model, same task — the difference is entirely the persistent brain plus the hooks that auto-saved yesterday and reloaded today.
+This is the payoff from [the thesis](../manual/01-thesis.md): it feels like **there was never a pause**. Same model, same task — the difference is entirely the persistent brain plus the hooks that auto-saved yesterday and reloaded today.

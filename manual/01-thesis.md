@@ -1,6 +1,4 @@
-🌐 **English** · [Deutsch](de/02-thesis.md)
-
-[← Back to README](../README.md) · [Problem](01-problem.md) · **Thesis** · [Build Guide](03-build-guide.md) · [Windows Reality](04-windows-reality.md) · [FAQ](05-faq.md) · [In the Wild](06-in-the-wild.md)
+[← Manual](../README.md) · [Problem](00-problem.md) · [Thesis](01-thesis.md) · [Pillars](pillar-1-model/README.md) · [Windows](02-field-conditions-windows.md) · [FAQ](03-faq.md) · [Field Notes](../field-notes/README.md) · [Upstream](../upstream/README.md)
 
 ---
 
@@ -38,7 +36,7 @@ Raw chat improvises. A harness gives you reusable skills, specialized sub-agents
 
 ## Pillar 3 — A persistent brain
 
-**Claim:** since handoff/compaction is architecturally lossy ([see the problem](01-problem.md)), the only fix is memory that lives *outside* the conversation and is reloaded into every session.
+**Claim:** since handoff/compaction is architecturally lossy ([see the problem](00-problem.md)), the only fix is memory that lives *outside* the conversation and is reloaded into every session.
 
 A persistent store — written to automatically as you work, and read back at the start of each session — turns the amnesiac into something continuous. Yesterday's hard-won understanding is there today, without you re-explaining it. The store must be **ruthless about quality** (see Pillar 1): a memory that ingests noise is worse than no memory, because it launders bad data into "remembered fact."
 
@@ -56,4 +54,4 @@ A persistent store — written to automatically as you work, and read back at th
 
 The pillars are not a menu. They are a set of simultaneous conditions. The payoff — the thing that makes it feel like "there was never a pause" — only appears when all three hold.
 
-Next: **[how to build it](03-build-guide.md)**.
+Next: build the pillars in order — **[Pillar 1: Model](pillar-1-model/README.md)** → [Pillar 2: Harness](pillar-2-harness/README.md) → [Pillar 3: Memory](pillar-3-memory/README.md).

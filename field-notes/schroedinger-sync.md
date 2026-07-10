@@ -1,6 +1,4 @@
-🌐 **English** · [Deutsch](de/06-in-the-wild.md)
-
-[← Back to README](../README.md) · [Problem](01-problem.md) · [Thesis](02-thesis.md) · [Build Guide](03-build-guide.md) · [Windows Reality](04-windows-reality.md) · [FAQ](05-faq.md) · **In the Wild**
+[← Field Notes](README.md) · [Manual](../README.md) · [Upstream Ledger](../upstream/README.md)
 
 ---
 

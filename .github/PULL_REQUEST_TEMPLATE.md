@@ -9,5 +9,4 @@
 ## Checklist
 
 - [ ] Matches the existing voice (concrete over hype, honest about gaps — see [CONTRIBUTING](../CONTRIBUTING.md))
-- [ ] If you touched a doc that exists in both `docs/*.md` and `docs/de/*.md`, both are updated
 - [ ] Links you added/changed actually resolve (the link-check workflow will also catch this)
