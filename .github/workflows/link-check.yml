@@ -14,6 +14,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: Link Checker
         uses: lycheeverse/lychee-action@v2
+        env:
+          # Authenticated requests: github.com links (PR ledger, pillar refs)
+          # hit the anonymous rate limit (429) from CI runners otherwise.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           args: >
             --verbose --no-progress
