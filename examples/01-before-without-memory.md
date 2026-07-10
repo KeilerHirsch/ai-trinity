@@ -28,4 +28,4 @@
 - The single most valuable artifact from Day 1 — the **subtle refunds/idempotency bug** the assistant itself discovered — is **gone**, and the user has to remember it well enough to re-surface it.
 - Every day starts at a deficit. The assistant is brilliant and completely new, every morning.
 
-This is the amnesia from [the problem](../docs/01-problem.md). Now read [`02-after-with-memory.md`](02-after-with-memory.md).
+This is the amnesia from [the problem](../manual/00-problem.md). Now read [`02-after-with-memory.md`](02-after-with-memory.md).

@@ -1,12 +1,12 @@
 name: "In the Wild" submission
-description: Built something because you followed this thesis? Submit it for docs/06-in-the-wild.md.
+description: Built something because you followed this thesis? Submit it for field-notes/README.md.
 title: "[in-the-wild] "
 labels: ["showcase"]
 body:
   - type: markdown
     attributes:
       value: |
-        See docs/06-in-the-wild.md for the tone and format this aims for — concrete, honest about scope, not a pitch.
+        See field-notes/README.md for the tone and format this aims for — concrete, honest about scope, not a pitch.
   - type: input
     id: name-link
     attributes:

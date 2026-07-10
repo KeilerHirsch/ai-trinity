@@ -1,6 +1,4 @@
-🌐 **English** · [Deutsch](de/01-problem.md)
-
-[← Back to README](../README.md) · **Problem** · [Thesis](02-thesis.md) · [Build Guide](03-build-guide.md) · [Windows Reality](04-windows-reality.md) · [FAQ](05-faq.md) · [In the Wild](06-in-the-wild.md)
+[← Manual](../README.md) · [Problem](00-problem.md) · [Thesis](01-thesis.md) · [Pillars](pillar-1-model/README.md) · [Windows](02-field-conditions-windows.md) · [FAQ](03-faq.md) · [Field Notes](../field-notes/README.md) · [Upstream](../upstream/README.md)
 
 ---
 
@@ -40,4 +38,4 @@ This is the trap behind naïve "multi-model" setups: routing work through a mode
 - A great model with memory but no method → fast, persistent chaos (failure 2).
 - Memory + method but a noisy model → a well-organized, persistent archive of confident nonsense (failure 3).
 
-The failures interlock. That is why the solution is not one tool but **three pillars that must all hold at once** — the subject of [the thesis](02-thesis.md).
+The failures interlock. That is why the solution is not one tool but **three pillars that must all hold at once** — the subject of [the thesis](01-thesis.md).

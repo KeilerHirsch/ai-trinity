@@ -19,7 +19,7 @@
         method/discipline            continuity
 ```
 
-All three must hold at once. Remove any one and the system degrades (see [thesis](../docs/02-thesis.md)).
+All three must hold at once. Remove any one and the system degrades (see [thesis](../manual/01-thesis.md)).
 
 ## Memory flow — how continuity actually happens
 
