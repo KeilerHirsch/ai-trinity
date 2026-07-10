@@ -14,6 +14,9 @@
 
 ---
 
+> [!IMPORTANT]
+> **The claim in one breath:** a brilliant model on its own is a brilliant amnesiac. Reliability only appears when three conditions hold **at the same time** — a model with a provably low error rate, an enforced method around it, and memory that survives the session. This repo is the field manual for building all three, with [receipts](upstream/README.md).
+
 ## TL;DR
 
 After months of heavy daily use, one conclusion held up: a brilliant model on its own is a **brilliant amnesiac**. The model is necessary but not sufficient. Three things have to be true at the same time before the quality-of-life jump actually happens:
@@ -49,6 +52,17 @@ Screen your own model with an objective test ([bullshit-benchmark](https://githu
 ## Battle-tested, not blogged
 
 This is not theory written after a weekend of tinkering. The stack behind this manual runs daily against a 300k-entry memory store on Windows — and the failures it surfaced were diagnosed and **fixed upstream in the pillars themselves**: a merged data-loss fix, a 45s→1.3s MCP handshake fix, a silent-GPU-fallback fix, and more. See the [Upstream Ledger](upstream/README.md) for the receipts and the [Field Notes](field-notes/README.md) for the full worked cases.
+
+## Quick start — the trinity in three rules
+
+If you do not want to read the full manual yet, these three rules capture it. Verify each before moving to the next:
+
+1. **Screen your model before you trust it.** Run an objective error-rate check ([bullshit-benchmark](https://github.com/petergpt/bullshit-benchmark)) and refuse to route consequential or memory-writing work through anything that fails it — no matter how good the demo looked.
+2. **Put enforced method around it.** Install a harness ([Claude Code](https://claude.com/product/claude-code) + [ECC](https://github.com/affaan-m/ECC)): review gates that always run, guard hooks that block the dangerous defaults, skills for everything you do twice.
+3. **Give it memory that survives the session.** Wire a local store ([MemPalace](https://github.com/MemPalace/mempalace)) through auto-save hooks — stop, pre-compaction, session-start — so yesterday's understanding loads tomorrow without you re-explaining.
+
+> [!TIP]
+> The fastest way to see the payoff: read the [before/after transcripts](examples/README.md) — same task, same model, one has the brain.
 
 ## How to read this
 
