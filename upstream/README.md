@@ -21,7 +21,7 @@ Anyone can recommend three projects. Running them at real scale — a 300k-entry
 | 2026-07-02 | [#1910](https://github.com/MemPalace/mempalace/pull/1910) | Windows per-file mine-lock gives up after ~10 s instead of blocking — waiter crashes on large files | open |
 | 2026-07-02 | [#1909](https://github.com/MemPalace/mempalace/pull/1909) | Strip the full Claude Code slash-command envelope + ANSI escapes from ingested transcripts (fixes [#1333](https://github.com/MemPalace/mempalace/issues/1333)) | open |
 
-Plus filed issues with full repro data (e.g. [#1908](https://github.com/MemPalace/mempalace/issues/1908) — MCP tools hang after an interrupted mine, chromadb compactor).
+Plus filed issues with full repro data: [#1990](https://github.com/MemPalace/mempalace/issues/1990) — self-verifying saves (a memory that fails silently is not yet memory; proof-of-concept watchdog included), [#1908](https://github.com/MemPalace/mempalace/issues/1908) — MCP tools hang after an interrupted mine (chromadb compactor).
 
 ## Tools born from the thesis
 
