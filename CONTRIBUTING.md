@@ -13,6 +13,3 @@ What doesn't fit: swapping in a different "pillar 1/2/3" project as *the* canoni
 
 Match the existing voice: concrete over hype, honest about gaps, field notes rather than marketing copy. If a claim can't be backed by something reproducible, say so plainly instead of smoothing it over.
 
-## Language
-
-This repo is **English-only by design** — a single maintained language beats a rotting translation. Issues and PRs in English or German are both read.

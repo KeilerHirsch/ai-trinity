@@ -10,8 +10,9 @@ A model you build a system around must be screened on how often it is *wrong*, e
 
 ## Proof from the field
 
-- **The archive-of-nonsense failure is real.** An earlier iteration of this setup routed memory-writing work through a weaker model. The persistent store filled with plausible-sounding noise, and later sessions reasoned over it as if it were fact. The store had to be rebuilt and the model dropped. A memory that ingests noise is worse than no memory — it launders bad data into "remembered fact".
-- **Validators need the same screen.** Using a high-hallucination model to *check* another model's work fails the same way, just less visibly: a validator that invents its own findings poisons your review process instead of your memory. Same screen, same bar.
+- **The archive-of-nonsense failure is real.** An early iteration of this setup let a local small-parameter model write to the persistent store. It filled the store with **six figures of plausible-sounding noise**; later sessions reasoned over it as if it were fact. The store had to be rebuilt from scratch and the pipeline retired. A memory that ingests noise is worse than no memory — it launders bad data into "remembered fact". Cheap tokens are not cheap when every one of them can poison the well.
+- **Validators need the same screen.** A frontier competitor model, used only to *cross-check* deep audit work, repeatedly **invented findings** — precise-looking errors that read like diligence. A validator that hallucinates is strictly worse than no validator, because it converts your skepticism into false confidence. Dropped from the workflow entirely.
+- **The conclusion this operator drew:** the stack has run exclusively on [Claude](https://claude.com) for months — through [Claude Code](https://claude.com/product/claude-code) for the daily engineering grind and the Claude apps elsewhere. Not brand preference: it is the only model in this operator's screening that survived both failure modes above at daily-driver intensity. Run your own screen; that is the whole point of this pillar.
 
 ## Build it
 

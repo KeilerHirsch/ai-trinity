@@ -9,6 +9,7 @@ system. Full credit to their authors and maintainers.
 | Model quality | [petergpt/bullshit-benchmark](https://github.com/petergpt/bullshit-benchmark) | petergpt |
 | Foundation / harness | [affaan-m/ECC](https://github.com/affaan-m/ECC) | Affaan Mustafa |
 | Persistent brain | [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | MemPalace |
+| Agent runtime & model | [Claude Code](https://claude.com/product/claude-code) / [Claude](https://claude.com) | [Anthropic](https://www.anthropic.com) |
 
 Each project is licensed under its own terms; consult its repository.
 
