@@ -6,3 +6,13 @@ Thumbs.db
 .vscode/
 
 # nothing else to ignore — this is a docs-only repo
+
+# --- Secrets / PII (NEVER commit) ---
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+*.pfx
+Local State
+Cookies
