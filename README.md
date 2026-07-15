@@ -14,7 +14,7 @@
 
 ---
 
-<p align="center"><img src="assets/showcase.svg" width="900" alt="The three pillars: a low-error Model, an enforced Harness, and Memory that survives the session — all three at once"/></p>
+<p align="center"><img src="assets/showcase.gif" width="900" alt="The three pillars: a low-error Model, an enforced Harness, and Memory that survives the session — all three at once"/></p>
 
 > [!IMPORTANT]
 > **The claim in one breath:** a brilliant model on its own is a brilliant amnesiac. Reliability only appears when three conditions hold **at the same time** — a model with a provably low error rate, an enforced method around it, and memory that survives the session. This repo is the field manual for building all three, with [receipts](upstream/README.md).
