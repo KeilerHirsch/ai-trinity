@@ -8,6 +8,7 @@ The pillars are not theory — living inside them generates real, specific engin
 
 | Date | Note | Pillar |
 |------|------|--------|
+| 2026-07-20 | [The config that lied](2026-07-20-silent-drift.md) — four green lights, four silent failures, one watchdog | 1+2+3 (all) |
 | 2026-07-11 | [GSOC Command Center](command-center.md) — a live cockpit that reads the brain directly | 1+2+3 (all) |
 | 2026-07-10 | [The 45-second MCP handshake](2026-07-10-mcp-handshake.md) — measure → eliminate → fix → 2 upstream PRs | 3 (memory) |
 | 2026-07 | [Schrödinger Sync](schroedinger-sync.md) — closing the Desktop/Web amnesia gap | 3 (memory) |
