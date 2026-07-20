@@ -55,6 +55,36 @@ Screen your own model with an objective test ([bullshit-benchmark](https://githu
 
 This is not theory written after a weekend of tinkering. The stack behind this manual runs daily against a 300k-entry memory store on Windows — and the failures it surfaced were diagnosed and **fixed upstream in the pillars themselves**: a merged data-loss fix, a 45s→1.3s MCP handshake fix, a silent-GPU-fallback fix, and more. See the [Upstream Ledger](upstream/README.md) for the receipts and the [Field Notes](field-notes/README.md) for the full worked cases.
 
+## After an update: check before you rebuild
+
+Every stack like this eventually gets a tooling update — a new CLI version, a plugin bump, a
+machine change. What follows feels like amnesia: the assistant misses things it knew yesterday,
+guards seem not to fire, paths do not resolve. The reflex is to rebuild and re-index everything.
+
+**That reflex is usually wrong, and it is expensive.** Nothing was lost. Pieces became *quietly
+incorrect*, and nothing in the setup was watching for that. A missing fact makes you search; a
+wrong fact makes you act on it. Only the second one is invisible.
+
+> [!WARNING]
+> Four signs the wiring came loose. Each one produced a green light in the field:
+> - An update command reports **"already up to date"** while the installed content differs.
+> - Notes and runbooks point at paths that moved — worst when the stale one is a **recovery**
+>   runbook, read only during an incident.
+> - A guard is registered in one scope and never fires in the one where the work happens.
+> - A check "passes" because it compared against something empty and found nothing to object to.
+
+The fix is not a rebuild — it is a **reconciliation check at startup**: verify that what the
+configuration claims still matches reality, stay silent when it does, and be loud when it does
+not. Read-only, fail-open, and cheap enough to run on every session. Give it a heartbeat too;
+a watchdog that fails silently is the thing it exists to prevent.
+
+The habit that generalises, and the cheapest question in this whole manual:
+
+> **For every component you add, ask: what notices if this becomes silently wrong?**
+> If there is no answer, the component is unfinished — however well it works today.
+
+Worked case with the measurements: [The config that lied](field-notes/2026-07-20-silent-drift.md).
+
 ## Quick start — the trinity in three rules
 
 If you do not want to read the full manual yet, these three rules capture it. Verify each before moving to the next:
